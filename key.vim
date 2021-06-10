@@ -1,0 +1,46 @@
+"basic
+    map <A-u> <C-u>
+    map <A-d> <C-d>
+
+""drag line up/down 
+    map <A-k> ddkkp
+    map <A-h> << <esc>
+    map <A-j> ddp
+    map <A-l> >> <esc>
+
+"clear search pattern
+    map ,c :let @/ = ""<CR>
+"nerdtree:
+    map <leader>n :NERDTreeToggle<CR>
+"git
+    map <leader>m :Magit<CR> 
+    map <leader>gs :G<CR> 
+    map <leader>gh :diffget //2<CR> 
+    map <leader>gl :diffget //3<CR> 
+    map <leader>gc :Gcommit<CR> 
+    "map <leader>gh :G<CR> 
+"tab nav:
+    map <leader>l <C-w>l
+    map <leader>h <C-w>h
+    map <leader>j <C-w>j
+    map <leader>k <C-w>k
+"ycm:
+    map <leader>gd :YcmCompleter GoTo<CR>
+    autocmd FileType cs map <leader>gd :OmniSharpGotoDefinition<CR>
+"commenter:
+    map ,/ <plug>NERDCommenterToggle
+"vimspector
+map <leader>dd :call  vimspector#Launch()<CR>
+map <leader>dx :VimspectorReset<CR>
+map <leader>de :VimspectorEval<CR>
+map <leader>dw :VimspectorWatch<CR>
+map <leader>do :VimspectorShowOutput<CR>
+map <leader>dj <Plug>VimspectorStepOver<CR>
+map <leader>dsi <Plug>VimspectorStepInto<CR>
+map <leader>dso <Plug>VimspectorStepOut<CR>
+
+
+
+
+
+
