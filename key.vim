@@ -1,6 +1,11 @@
 "basic
     map <A-u> <C-u>
     map <A-d> <C-d>
+    nnoremap ' `
+
+"resize windows
+    nnoremap <leader>pv :vertical res
+    nnoremap <leader>ph :res
 
 ""drag line up/down
     map <A-k> ddkkp

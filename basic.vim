@@ -1,6 +1,6 @@
 "basic settings:
-    let mapleader = " " 
-    syntax on 
+    let mapleader = " "
+    syntax on
     colorscheme gruvbox
     highlight Normal guibg=none
     set exrc

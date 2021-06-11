@@ -10,7 +10,11 @@ Plug 'scrooloose/nerdcommenter'
 "Plug 'scrooloose/syntastic'
 Plug 'tomasiser/vim-code-dark'
 
+Plug 'StanAngeloff/php.vim'
+Plug 'stephpy/vim-php-cs-fixer'
+
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
 
 "debugger
 Plug 'puremourning/vimspector'

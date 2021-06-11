@@ -1,4 +1,13 @@
 packloadall
+
+"gutentags
+    let g:gutentags_enabled=1
+
+    let g:php_version_id=70400
+    let g:php_var_selector_is_identifier=1
+
+    source $HOME/.config/nvim/php_cs_fixer.vim
+
 "coc:
     let g:coc_global_extension = [
         \ 'coc-snippets',
@@ -12,13 +21,6 @@ packloadall
 "gruvbox
     let g:gruvbox_contrast_dark = 'hard'
     let g:gruvbox_invert_selection = '0'
-"emmet:
-    "let g:user_emmet_leader_key='<C-Tab>'
-    "let g:user_emmet_settings = {
-    "\  'javascript.jsx' : {
-    "\      'extends' : 'jsx',
-    "\  },
-    "\}
 "vimspector
 let g:vimspector_enable_mappings = "HUMAN"
 "packadd! vimspector
