@@ -1,16 +1,16 @@
 call plug#begin('~/.config/nvim/plugged')
 "general
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree'
-Plug 'prettier/vim-prettier', { 
-    \ 'do': 'npm install' , 
-    \ 'for' : ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 
-    \           'graphql', 'markdown', 'vue', 'yaml', 'html', 'cs']
-    \}
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'scrooloose/nerdcommenter'
 "Plug 'scrooloose/syntastic'
 Plug 'tomasiser/vim-code-dark'
+
+Plug 'neovim/nvim-lspconfig'
 
 "debugger
 Plug 'puremourning/vimspector'
@@ -42,7 +42,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty' 
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alvan/vim-closetag'
 
 "c#

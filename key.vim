@@ -2,23 +2,30 @@
     map <A-u> <C-u>
     map <A-d> <C-d>
 
-""drag line up/down 
+""drag line up/down
     map <A-k> ddkkp
     map <A-h> << <esc>
     map <A-j> ddp
     map <A-l> >> <esc>
 
-"clear search pattern
-    map ,c :let @/ = ""<CR>
+    nnoremap <C-A-l> :Prettier<CR>
+
+
+"telescope
+nnoremap <leader>ps :lua require('telescope.builtin').grep_string({search=vim.fn.input("Grep for > ")})<CR>
+nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
+nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
+
 "nerdtree:
     map <leader>n :NERDTreeToggle<CR>
+
 "git
-    map <leader>m :Magit<CR> 
-    map <leader>gs :G<CR> 
-    map <leader>gh :diffget //2<CR> 
-    map <leader>gl :diffget //3<CR> 
-    map <leader>gc :Gcommit<CR> 
-    "map <leader>gh :G<CR> 
+    map <leader>m :Magit<CR>
+    map <leader>gs :G<CR>
+    map <leader>gh :diffget //2<CR>
+    map <leader>gl :diffget //3<CR>
+    map <leader>gc :Gcommit<CR>
+    "map <leader>gh :G<CR>
 "tab nav:
     map <leader>l <C-w>l
     map <leader>h <C-w>h
@@ -39,6 +46,16 @@ map <leader>dj <Plug>VimspectorStepOver<CR>
 map <leader>dsi <Plug>VimspectorStepInto<CR>
 map <leader>dso <Plug>VimspectorStepOut<CR>
 
+fun! TrimWhiteSpace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+augroup PRIME
+    autocmd!
+    autocmd BufWritePre * :call TrimWhiteSpace()
+augroup END
 
 
 

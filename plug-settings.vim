@@ -1,3 +1,4 @@
+packloadall
 "coc:
     let g:coc_global_extension = [
         \ 'coc-snippets',
@@ -32,7 +33,7 @@ let g:vimspector_enable_mappings = "HUMAN"
 "highlight
     "let g:vim_jsx_pretty_highlight_close_tag = 1
     let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.js'
-    
+
 "omnisharp
     " Use the stdio version of OmniSharp-roslyn:
     let g:OmniSharp_start_server = 1

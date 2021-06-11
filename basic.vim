@@ -2,14 +2,35 @@
     let mapleader = " " 
     syntax on 
     colorscheme gruvbox
-    "highlight ColorColumn ctermbg=magenta
-    set colorcolumn=81
-    set background=dark
+    highlight Normal guibg=none
+    set exrc
+    set guicursor=
     set number relativenumber
-    set ignorecase
+
+    set nohlsearch
+    set hidden
+    set noerrorbells
+    set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+    set nowrap
+
+    set noswapfile
+    set nobackup
+    set undodir=~/.vim/undodir
+    set undofile
+
+    set incsearch
+    set scrolloff=12
+    set colorcolumn=80
+    set signcolumn=yes
+
+    set cmdheight=2
+
+    set updatetime=50
+
+    set background=dark
     set backspace=indent,eol,start
     set autoindent
-    set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
     set ruler
     set showcmd
     set incsearch
