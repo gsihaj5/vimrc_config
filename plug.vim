@@ -1,64 +1,118 @@
 call plug#begin('~/.config/nvim/plugged')
-"general
+
+"===============================================================================
+"=====================================EXPLORER==================================
+"===============================================================================
+"telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+"nerdtree
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'scrooloose/nerdcommenter'
-"Plug 'scrooloose/syntastic'
-Plug 'tomasiser/vim-code-dark'
 
-Plug 'StanAngeloff/php.vim'
+"Plug 'markwoodhall/vim-nuget'
+"Plug 'junegunn/fzf.vim'
+
+"===============================================================================
+"==================================== FORMATER =================================
+"===============================================================================
+"php
 Plug 'aeke/vim-php-cs-fixer'
 
+"prettier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+
+Plug 'jiangmiao/auto-pairs'
+
+
+"===============================================================================
+"================================ SYNTAX HIGHLIGHT =============================
+"===============================================================================
+"Plug 'scrooloose/syntastic'
+Plug 'StanAngeloff/php.vim'
+
+Plug 'jwalton512/vim-blade'
+
+"Plug 'yuezk/vim-js'
+"Plug 'maxmellon/vim-jsx-pretty'
+
+"===============================================================================
+"=================================== EDITOR STYLE ==============================
+"===============================================================================
+"dark scheme
+Plug 'tomasiser/vim-code-dark'
+
+"status bar
+Plug 'vim-airline/vim-airline'
+
+"everyone use this gruvvbox things because it smooooothh
+Plug 'gruvbox-community/gruvbox'
+
+"give marking on indentation
+Plug 'Yggdroot/indentLine'
+
+"===============================================================================
+"======================================= GIT ===================================
+"===============================================================================
+"branch visualization
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+
+"git commits manager
+Plug 'jreybert/vimagit'
+
+
+"===============================================================================
+"================================== AUTO COMPLETE ==============================
+"===============================================================================
+
+"Plug 'pangloss/vim-javascript'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
 
-"debugger
+"html tag wrapper
+Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag'
+
+Plug 'OmniSharp/omnisharp-vim'
+
+"Plug 'Shougo/deoplete.nvim'
+
+"===============================================================================
+"==================================== DEBUGGER =================================
+"===============================================================================
 Plug 'puremourning/vimspector'
 
-"git vim
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'junegunn/gv.vim'
-Plug 'jreybert/vimagit'
 
-"autocomplete
-Plug 'pangloss/vim-javascript'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
-
-"vim be good
+"===============================================================================
+"===================================== GAMES ===================================
+"===============================================================================
 Plug 'ThePrimeagen/vim-be-good'
-Plug 'gruvbox-community/gruvbox'
 
-Plug 'Yggdroot/indentLine'
 
-"language dependent ======================================================
-"html
-Plug 'mattn/emmet-vim'
-"jsx
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
+"===============================================================================
+"================================ SYNTAX CHECKER ===============================
+"===============================================================================
 Plug 'w0rp/ale'
+
 Plug 'dense-analysis/ale'
-Plug 'jiangmiao/auto-pairs' "autopair
+
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'alvan/vim-closetag'
 
-"c#
-Plug 'OmniSharp/omnisharp-vim'
-Plug 'markwoodhall/vim-nuget'
-Plug 'mattn/webapi-vim'
-Plug 'junegunn/fzf.vim'
-Plug 'Shougo/deoplete.nvim'
+Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
 
-"laravel
-Plug 'jwalton512/vim-blade'
 
+"===============================================================================
+"===============================================================================
+"===============================================================================
+
+"Plug 'mattn/webapi-vim'
 call plug#end()
 
