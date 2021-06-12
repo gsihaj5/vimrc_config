@@ -11,7 +11,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tomasiser/vim-code-dark'
 
 Plug 'StanAngeloff/php.vim'
-Plug 'stephpy/vim-php-cs-fixer'
+Plug 'aeke/vim-php-cs-fixer'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
@@ -41,6 +41,7 @@ Plug 'mattn/emmet-vim'
 "jsx
 Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
 Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs' "autopair
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'

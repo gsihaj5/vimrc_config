@@ -37,7 +37,7 @@ nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
     map <leader>j <C-w>j
     map <leader>k <C-w>k
 "ycm:
-    map <leader>gd :YcmCompleter GoTo<CR>
+    "map <leader>gd :YcmCompleter GoTo<CR>
     autocmd FileType cs map <leader>gd :OmniSharpGotoDefinition<CR>
 "commenter:
     map ,/ <plug>NERDCommenterToggle

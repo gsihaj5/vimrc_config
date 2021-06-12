@@ -64,26 +64,26 @@ let g:vimspector_enable_mappings = "HUMAN"
         autocmd CursorHold *.cs OmniSharpTypeLookup
 
         " The following commands are contextual, based on the cursor position.
-        autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
-        autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
-        autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
-        autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+        nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
+        nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+        nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
+        nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
 
         " Finds members in the current buffer
-        autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
+        nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
 
-        autocmd FileType cs nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
-        autocmd FileType cs nnoremap <buffer> <Leader>tt :OmniSharpTypeLookup<CR>
-        autocmd FileType cs nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
-        autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
-        autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
+        nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
+        nnoremap <buffer> <Leader>tt :OmniSharpTypeLookup<CR>
+        nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
+        nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
+        nnoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
 
         " Navigate up and down by method/property/field
-        autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
-        autocmd FileType cs nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
+        nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
+        nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
 
         " Find all code errors/warnings for the current solution and populate the quickfix window
-        autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
+        nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
     augroup END
 
     " Use the HTTP version of OmniSharp-roslyn:
