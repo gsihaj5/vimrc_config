@@ -7,6 +7,9 @@ packloadall
     let g:php_var_selector_is_identifier=1
 
     source $HOME/.config/nvim/php_cs_fixer.vim
+    source $HOME/.config/nvim/lspconfig.vim
+
+    luafile ~/.config/nvim/compe.lua
 
 "coc:
     let g:coc_global_extension = [

@@ -16,6 +16,7 @@
     nnoremap <C-A-l> :Prettier<CR>
 
 
+
 "telescope
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({search=vim.fn.input("Grep for > ")})<CR>
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
@@ -38,7 +39,7 @@ nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
     map <leader>k <C-w>k
 "ycm:
     "map <leader>gd :YcmCompleter GoTo<CR>
-    autocmd FileType cs map <leader>gd :OmniSharpGotoDefinition<CR>
+    "autocmd FileType cs map <leader>gd :OmniSharpGotoDefinition<CR>
 "commenter:
     map ,/ <plug>NERDCommenterToggle
 "vimspector

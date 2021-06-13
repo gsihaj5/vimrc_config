@@ -73,7 +73,10 @@ Plug 'jreybert/vimagit'
 "Plug 'pangloss/vim-javascript'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-lua/completion-nvim'
+Plug 'kabouzeid/nvim-lspinstall'
+
 
 "html tag wrapper
 Plug 'mattn/emmet-vim'
