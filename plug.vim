@@ -63,7 +63,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
 "git commits manager
-Plug 'jreybert/vimagit'
+"Plug 'jreybert/vimagit'
 
 
 "===============================================================================

@@ -26,11 +26,11 @@ nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
     map <leader>n :NERDTreeToggle<CR>
 
 "git
-    map <leader>m :Magit<CR>
+    "map <leader>m :Magit<CR>
     map <leader>gs :G<CR>
     map <leader>gh :diffget //2<CR>
     map <leader>gl :diffget //3<CR>
-    map <leader>gc :Gcommit<CR>
+    map <leader>gc :Git commit<CR>
     "map <leader>gh :G<CR>
 "tab nav:
     map <leader>l <C-w>l
