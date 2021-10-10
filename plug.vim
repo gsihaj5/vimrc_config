@@ -16,16 +16,6 @@ Plug 'scrooloose/nerdcommenter'
 "Plug 'markwoodhall/vim-nuget'
 "Plug 'junegunn/fzf.vim'
 
-"===============================================================================
-"==================================== FORMATER =================================
-"===============================================================================
-"php
-Plug 'aeke/vim-php-cs-fixer'
-
-"prettier
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-
 Plug 'jiangmiao/auto-pairs'
 
 
@@ -67,24 +57,24 @@ Plug 'junegunn/gv.vim'
 
 
 "===============================================================================
-"================================== AUTO COMPLETE ==============================
+"======================================= LSP ===================================
 "===============================================================================
-
-"Plug 'pangloss/vim-javascript'
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
-Plug 'nvim-lua/completion-nvim'
-Plug 'kabouzeid/nvim-lspinstall'
 
+Plug 'nvim-lua/completion-nvim'
+
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"auto format
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ }
 
 "html tag wrapper
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 
 Plug 'OmniSharp/omnisharp-vim'
-
-"Plug 'Shougo/deoplete.nvim'
 
 "===============================================================================
 "==================================== DEBUGGER =================================
@@ -96,21 +86,6 @@ Plug 'OmniSharp/omnisharp-vim'
 "===================================== GAMES ===================================
 "===============================================================================
 Plug 'ThePrimeagen/vim-be-good'
-
-
-"===============================================================================
-"================================ SYNTAX CHECKER ===============================
-"===============================================================================
-Plug 'w0rp/ale'
-
-Plug 'dense-analysis/ale'
-
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-
-
-Plug 'ternjs/tern_for_vim', { 'do' : 'npm install' }
-
 
 "===============================================================================
 "===============================================================================

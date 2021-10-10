@@ -1,4 +1,3 @@
-"basic settings:
     let mapleader = " "
     syntax on
     colorscheme gruvbox
@@ -44,7 +43,7 @@
     "let g:indentLine_setColors = 0
     let g:indentLine_char_list = ['|', '¦', '┆', '┊']
     let g:indentLine_concealcursor = 'inc'
-    let g:indentLine_conceallevel = 2
+    let g:indentLine_conceallevel = 4
 
     " Define some single Blade directives. This variable is used for highlighting only.
     let g:blade_custom_directives = ['datetime', 'javascript']
