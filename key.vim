@@ -39,6 +39,8 @@ nnoremap <leader>pg :lua require('telescope.builtin').git_files()<CR>
     map <leader>gh :diffget //2<CR>
     map <leader>gl :diffget //3<CR>
     map <leader>gc :Git commit<CR>
+    map <leader>gp :Gpush<CR>
+
 "tab nav:
     map <leader>l <C-w>l
     map <leader>h <C-w>h
