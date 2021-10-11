@@ -6,8 +6,13 @@ packloadall
     let g:php_version_id=70400
     let g:php_var_selector_is_identifier=1
 
-    source ~/.config/nvim/lspconfig.vim
-    luafile ~/.config/nvim/compe.lua
+"lsp
+"== native LSP ==
+    "source ~/.config/nvim/lspconfig.vim
+    "luafile ~/.config/nvim/compe.lua
+"== coc LSP ==
+autocmd BufNewFile,BufRead *.blade.php set filetype=blade
+source ~/.config/nvim/plug-config/coc.vim
 
 "deoplete:
     let g:deoplete#enable_at_startup = 1
@@ -25,4 +30,3 @@ packloadall
 
 "prettier
     let g:prettier#config#tab_width=4
-"source ~/.config/nvim/plug-config/coc.vim

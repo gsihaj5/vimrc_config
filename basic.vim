@@ -2,6 +2,7 @@
     syntax on
     colorscheme gruvbox
     highlight Normal guibg=none
+    set encoding=utf-8
     set exrc
     set guicursor=
     set number relativenumber
@@ -15,6 +16,7 @@
 
     set noswapfile
     set nobackup
+    set nowritebackup
     set undodir=~/.vim/undodir
     set undofile
 

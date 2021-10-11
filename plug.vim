@@ -6,15 +6,13 @@ call plug#begin('~/.config/nvim/plugged')
 "telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-telescope/telescope.nvim'
 
 "nerdtree
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-
-"Plug 'markwoodhall/vim-nuget'
-"Plug 'junegunn/fzf.vim'
 
 Plug 'jiangmiao/auto-pairs'
 
@@ -23,9 +21,9 @@ Plug 'jiangmiao/auto-pairs'
 "================================ SYNTAX HIGHLIGHT =============================
 "===============================================================================
 "Plug 'scrooloose/syntastic'
-Plug 'StanAngeloff/php.vim'
+"Plug 'StanAngeloff/php.vim'
 
-Plug 'jwalton512/vim-blade'
+"Plug 'jwalton512/vim-blade'
 
 "Plug 'yuezk/vim-js'
 "Plug 'maxmellon/vim-jsx-pretty'
@@ -59,12 +57,12 @@ Plug 'junegunn/gv.vim'
 "===============================================================================
 "======================================= LSP ===================================
 "===============================================================================
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'hrsh7th/nvim-compe'
 
 Plug 'nvim-lua/completion-nvim'
 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "auto format
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
@@ -73,8 +71,6 @@ Plug 'prettier/vim-prettier', {
 "html tag wrapper
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
-
-Plug 'OmniSharp/omnisharp-vim'
 
 "===============================================================================
 "==================================== DEBUGGER =================================
