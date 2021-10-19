@@ -21,9 +21,9 @@ Plug 'jiangmiao/auto-pairs'
 "================================ SYNTAX HIGHLIGHT =============================
 "===============================================================================
 "Plug 'scrooloose/syntastic'
-"Plug 'StanAngeloff/php.vim'
+Plug 'StanAngeloff/php.vim'
 
-"Plug 'jwalton512/vim-blade'
+Plug 'jwalton512/vim-blade'
 
 "Plug 'yuezk/vim-js'
 "Plug 'maxmellon/vim-jsx-pretty'

@@ -11,7 +11,7 @@ packloadall
     "source ~/.config/nvim/lspconfig.vim
     "luafile ~/.config/nvim/compe.lua
 "== coc LSP ==
-autocmd BufNewFile,BufRead *.blade.php set filetype=blade
+"autocmd BufNewFile,BufRead *.blade.php set filetype=blade
 source ~/.config/nvim/plug-config/coc.vim
 
 "deoplete:

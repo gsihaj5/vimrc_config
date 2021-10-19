@@ -17,8 +17,6 @@ nnoremap <C-k> :m .-2<CR>==
 
 "prettier
     nnoremap <C-A-l> :Prettier<CR>
-    "autocmd BufNewFile,BufRead *.blade.php set filetype=blade
-    "autocmd FileType blade nnoremap <C-A-l> :CocAction('format') <CR>
 "set center on next
 nnoremap n nzzzv
 nnoremap N Nzzzv
