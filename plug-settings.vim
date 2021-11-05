@@ -30,3 +30,5 @@ source ~/.config/nvim/plug-config/coc.vim
 
 "prettier
     let g:prettier#config#tab_width=4
+
+source ~/.config/nvim/plug-config/harpoon.lua

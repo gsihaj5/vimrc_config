@@ -29,11 +29,16 @@ nnoremap <leader>pf :lua require('telescope.builtin').find_files()<CR>
 
 nnoremap <leader>pg :lua require('telescope.builtin').git_files()<CR>
 
+"harpoon
+nnoremap <C-q> :lua require('harpoon.ui').toggle_quick_menu()<CR>
+nnoremap <C-a> :lua require("harpoon.mark").add_file()<CR>
+
 "nerdtree:
     map <leader>n :NERDTreeToggle<CR>
 
 "git
     map <leader>gs :G<CR>
+    map <leader>gq :Gdiff :0<CR>
     map <leader>gh :diffget //2<CR>
     map <leader>gl :diffget //3<CR>
     map <leader>gc :Git commit<CR>
